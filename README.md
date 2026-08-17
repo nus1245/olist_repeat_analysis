@@ -50,7 +50,7 @@ pip install scipy statsmodels pandas numpy
 [Olist Brazilian E-Commerce Public Dataset (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 
-## 노션 링
+## 노션 링크
 
 https://app.notion.com/p/Olist-A-B-3be22de4a409819dac7cf589b891adea?source=copy_link)---](https://app.notion.com/p/Olist-A-B-3be22de4a409819dac7cf589b891adea?source=copy_link
 
