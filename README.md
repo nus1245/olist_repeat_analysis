@@ -20,9 +20,9 @@
 | `09_core_customer_region_analysis.sql` | 핵심 고객 비중이 높은 지역 분석 |
 | `10_first_purchase_category_analysis.sql` | 첫 구매 카테고리 분포 |
 | `11_sales_trend_payment_analysis.sql` | 월별 매출 추이, 결제수단별 매출 구성 |
-| `12_rfm_exploration.sql` | **[고도화]** 재구매 고객 RFM 세분화 탐색 — R/F/M 축별 분포 진단, 세그먼트 정의, 페르소나 조합 |
-| `13_rfm_bcg_refactored_views.sql` | **[고도화]** 뷰 3단계로 리팩토링(`v_customer_delivered_orders`→`v_rfm_base`→`v_rfm_scored`), BCG 매트릭스(STAR/CASH_COW/QUESTION_MARK/DOG) |
-| `14_star_category_significance_ab_baseline.sql` | **[고도화]** STAR 고객 첫구매 카테고리 Lift 비교, one-time 고객 대비 상대비교, A/B 테스트 baseline 산정 |
+| `12_rfm_exploration.sql` | **[비즈니스 분석]** 재구매 고객 RFM 세분화 탐색 — R/F/M 축별 분포 진단, 세그먼트 정의, 페르소나 조합 |
+| `13_rfm_bcg_refactored_views.sql` | 뷰 3단계로 리팩토링(`v_customer_delivered_orders`→`v_rfm_base`→`v_rfm_scored`), BCG 매트릭스(STAR/CASH_COW/QUESTION_MARK/DOG) |
+| `14_star_category_significance_ab_baseline.sql` | STAR 고객 첫구매 카테고리 Lift 비교, one-time 고객 대비 상대비교, A/B 테스트 baseline 산정 |
 
 `python/chi_square_and_power_analysis.py`에서 14번 쿼리 결과를 받아 카이제곱 독립성 검정·표준화잔차·본페로니 다중비교 보정·표본크기 산정까지 이어집니다.
 
