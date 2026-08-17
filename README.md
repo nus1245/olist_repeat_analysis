@@ -49,6 +49,9 @@ pip install scipy statsmodels pandas numpy
 
 [Olist Brazilian E-Commerce Public Dataset (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
----
+
+## 노션 링
+
+https://app.notion.com/p/Olist-A-B-3be22de4a409819dac7cf589b891adea?source=copy_link)---](https://app.notion.com/p/Olist-A-B-3be22de4a409819dac7cf589b891adea?source=copy_link
 
 이 A/B 테스트는 실제로 실행된 것이 아니라, 정적 과거 데이터셋을 근거로 한 **설계 제안**입니다. 실제 실행·SRM/공변량 균형 검증 단계는 [King Coffee A/B 테스트 프로젝트](https://github.com/nus1245/a-b-test-simulation)에서 별도로 다뤘습니다.
