@@ -45,7 +45,7 @@ where o.status = 'delivered'
 group by c.customer_unique_id;
 
 
--- 배송완료 고객 중 one-time 고객 수 확인 -> 90,556명 (배송완료 고객의 93%가 단발성)
+-- 배송완료 고객 중 one-time 고객 수 확인 -> 90,556명 (배송완료 고객 93,357명의 97%가 단발성)
 select count(*) as one_time_customers
 from v_customer_delivered_orders
 where order_freq = 1;

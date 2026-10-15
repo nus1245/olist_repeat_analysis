@@ -1,7 +1,7 @@
 use olist_db;
 
 
-## 총 주문 처리 수 99441건 -> 주문완료 96478건(97%) -> one-time 주문 고객 90556건(93%가 단발성 고객)
+## 총 주문 처리 수 99441건 -> 주문완료 96478건(97%) -> one-time 고객 90,556명(배송완료 고객 93,357명의 97%가 단발성)
 select sum(t.cnt) from (select count(*) cnt from orders o join customers c on
 o.customer_id = c.customer_id
 where o.status='delivered'
