@@ -56,3 +56,16 @@ WITH customer_segment AS (
 )
 SELECT *
 FROM customer_segment;
+
+
+-- 재구매 고객이 Core(structure_segment = 1) 구간에 얼마나 속하는지 확인
+-- 재구매 고객(배송완료 2회 이상) 2,801명 중 Core 1,930명 -> 68.9%
+-- 전체 배송완료 고객 중 Core 비중(29.3%) 대비 약 2.4배
+SELECT
+    COUNT(*) AS repeat_cnt,
+    SUM(l.customer_ratio > 0.7067) AS core_cnt,
+    ROUND(SUM(l.customer_ratio > 0.7067) / COUNT(*), 4) AS core_share
+FROM customer_master_table cm
+JOIN customer_lorenz l
+    ON cm.customer_unique_id = l.customer_unique_id
+WHERE cm.repeat_customer = 1;
